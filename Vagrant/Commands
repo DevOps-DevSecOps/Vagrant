@@ -1,3 +1,6 @@
+[Up]
+vagrant up
+
 [SSH]
 vagrant ssh
 vagrant ssh NAME
