@@ -4,3 +4,6 @@ vagrant up
 [SSH]
 vagrant ssh
 vagrant ssh NAME
+
+[]
+vagrant ssh-config
