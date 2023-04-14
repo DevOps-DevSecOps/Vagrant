@@ -2,11 +2,10 @@
 vagrant version
 vagrant --version
 
-[Add]
+[Box]
 vagrant box add
+vagrant box list                                        #
 
-[List]
-vagrant box list
 
 [Init]                                                  # initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile
 vagrant init
@@ -57,9 +56,15 @@ vagrant reload NAME
 
 [Share]
 ◉ HTTP Sharing
-vagrant share
+vagrant share                                           # HTTP server is running in Vagrant environment with default port no
+vagrant share --http PORT_NO                            # port of the HTTP server running in the Vagrant environment
+vagrant share --https PORT_NO                           # port of an HTTPS server running in the Vagrant environment
+vagrant share --disable-http                            # disables the HTTP endpoint to Vagrant environment
 ◉ SSH Sharing
-vagrant share --ssh
+vagrant share --ssh                                     # enables SSH sharing, by default it use 22
+vagrant share --ssh-no-password                         # disables the encryption of SSH keypair created when SSH sharing is enabled
+vagrant share --ssh-port PORT_NO                        # port of the SSH server running in the Vagrant environment
+vagrant share --ssh-once                                # allows SSH access only once, after the first attempt to connect via SSH to the Vagrant, the generated keypair is destroyed
 
 [Suspend]
 vagrant suspend
