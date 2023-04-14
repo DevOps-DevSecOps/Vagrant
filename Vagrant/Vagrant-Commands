@@ -6,8 +6,11 @@ vagrant --version
 vagrant box add BOX_NAME
 vagrant box list                                        # lists all the boxes that are installed into Vagrant
 vagrant box outdated                                    #
+vagrant box outdated --force
+vagrant box outdated --global
 vagrant box update
-vagrant box remove
+vagrant box remove BOX_NAME
+vagrant box remove BOX_NAME --force
 vagrant box prune
 
 [Init]                                                  # initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile
@@ -17,6 +20,7 @@ vagrant init -m BOX_NAME                                # minimal Vagrantfile
 vagrant init --minimal BOX_NAME
 vagrant init -f BOX_NAME                                # overwrite an existing Vagrantfile in current path
 vagrant init --force BOX_NAME
+vagrant init NAME HTTP_URL_ADDRESS                      #
 
 [Validate]                                              # it validates the Vagrantfile
 vagrant validate
