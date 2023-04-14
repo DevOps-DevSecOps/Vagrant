@@ -2,14 +2,19 @@
 vagrant version
 vagrant --version
 
-[Validate]                                              # it validates the Vagrantfile
-vagrant validate
-
 [Add]
 vagrant box add
 
 [List]
 vagrant box list
+
+[Init]                                                  # initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile
+vagrant init
+vagrant init ID
+vagrant init NAME
+
+[Validate]                                              # it validates the Vagrantfile
+vagrant validate
 
 [Up]
 vagrant up
@@ -61,7 +66,23 @@ vagrant suspend
 vagrant suspend ID
 vagrant suspend NAME
 
+[Halt]                                                  # shuts down the running machine Vagrant
+vagrant halt
+vagrant halt -f
+vagrant halt --force
+vagrant halt ID
+vagrant halt ID -f
+vagrant halt ID --force
+vagrant halt NAME
+vagrant halt NAME -f
+vagrant halt NAME --force
+
+[Global Status]                                         # tells the state of all active Vagrant environments on the system for the currently logged in user
+vagrant global-status
+vagrant global-status --prune
+
 [HashiCorp Vagrant Cloud]
 vagrant login --check                                   # check if the current user is authenticated or not
 vagrant login                                           # it prompt username & password to login Vagrant Cloud
 vagrant login --token TOKEN_ID                          # securely authenticate with Vagrant Cloud using a token
+vagrant login --logout
