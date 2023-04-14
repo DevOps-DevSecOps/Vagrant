@@ -22,6 +22,11 @@ vagrant status
 vagrant status ID
 vagrant status NAME
 
+[Port]
+vagrant port
+vagrant port ID
+vagrant port NAME
+
 [SSH]
 vagrant ssh
 vagrant ssh ID
@@ -55,3 +60,8 @@ vagrant share --ssh
 vagrant suspend
 vagrant suspend ID
 vagrant suspend NAME
+
+[HashiCorp Vagrant Cloud]
+vagrant login --check                                   # check if the current user is authenticated or not
+vagrant login                                           # it prompt username & password to login Vagrant Cloud
+vagrant login --token TOKEN_ID                          # securely authenticate with Vagrant Cloud using a token
