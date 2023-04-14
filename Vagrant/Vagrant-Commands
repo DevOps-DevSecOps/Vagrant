@@ -13,6 +13,8 @@ vagrant box outdated --global
 vagrant box update
 vagrant box remove BOX_NAME
 vagrant box remove BOX_NAME --force
+vagrant box remove NAME
+vagrant box remove NAME --force
 vagrant box prune                                       # removes old versions of installed boxes
 vagrant box prune --force
 vagrant box prune --name BOX_NAME                       # specific box name to check for outdated versions
