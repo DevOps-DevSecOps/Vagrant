@@ -3,14 +3,20 @@ vagrant version
 vagrant --version
 
 [Box]
-vagrant box add
-vagrant box list                                        #
-
+vagrant box add BOX_NAME
+vagrant box list                                        # lists all the boxes that are installed into Vagrant
+vagrant box outdated                                    #
+vagrant box update
+vagrant box remove
+vagrant box prune
 
 [Init]                                                  # initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile
-vagrant init
-vagrant init ID
-vagrant init NAME
+vagrant init                                            # current directory it created a Vagrantfile need to be start from scratch
+vagrant init BOX_NAME                                   # directly adding 
+vagrant init -m BOX_NAME                                # minimal Vagrantfile
+vagrant init --minimal BOX_NAME
+vagrant init -f BOX_NAME                                # overwrite an existing Vagrantfile in current path
+vagrant init --force BOX_NAME
 
 [Validate]                                              # it validates the Vagrantfile
 vagrant validate
