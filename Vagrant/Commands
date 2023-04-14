@@ -1,9 +1,47 @@
+[Version]
+vagrant version
+vagrant --version
+
+[Validate]                                              # it validates the Vagrantfile
+vagrant validate
+
+[Add]
+vagrant box add
+
+[List]
+vagrant box list
+
 [Up]
 vagrant up
+vagrant up
+vagrant up ID                                           # the machine id found with 'vagrant global-status'
+vagrant up NAME                                         # name of machine defined in Vagrantfile, name to specify the Vagrant machine in Vagrantfile
+
+[Status]                                                # tells the state of the machines Vagrant
+vagrant status
+vagrant status ID
+vagrant status NAME
 
 [SSH]
 vagrant ssh
+vagrant ssh ID
 vagrant ssh NAME
 
-[]
+[SSH Config]                                            # valid configuration for an SSH config file to SSH into the running Vagrant machine from ssh directly (instead of using vagrant ssh)
 vagrant ssh-config
+vagrant ssh-config ID
+vagrant ssh-config NAME
+
+[Share]
+◉ HTTP Sharing
+vagrant share
+◉ SSH Sharing
+vagrant share --ssh
+
+[Suspend]
+vagrant suspend
+vagrant suspend ID
+vagrant suspend NAME
+
+[Stop]
+vagrant stop
