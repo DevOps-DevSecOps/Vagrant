@@ -32,6 +32,19 @@ vagrant ssh-config
 vagrant ssh-config ID
 vagrant ssh-config NAME
 
+[Stop]
+vagrant stop
+
+[Resume]
+vagrant resume
+vagrant resume ID
+vagrant resume NAME
+
+[Reload]                                                # usually required for changes made in the Vagrantfile to take effect, after making any modifications to the Vagrantfile, a reload should be called
+vagrant reload
+vagrant reload ID
+vagrant reload NAME
+
 [Share]
 ◉ HTTP Sharing
 vagrant share
@@ -42,6 +55,3 @@ vagrant share --ssh
 vagrant suspend
 vagrant suspend ID
 vagrant suspend NAME
-
-[Stop]
-vagrant stop
