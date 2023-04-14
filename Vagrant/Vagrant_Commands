@@ -1,0 +1,7 @@
+[Box]
+vagrant box add hashicorp/bionic64
+
+[Init]
+vagrant init ubuntu/trusty64
+vagrant init hashicorp/bionic64
+vagrant init my-company-box https://example.com/my-company.box
