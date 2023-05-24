@@ -4,3 +4,15 @@ $ vagrant box add geerlingguy/centos7
 [list of boxes downloaded and available in vagrant (local)]
 $ vagrant box list
 
+[create a new VM]
+$ vagrant init
+$ vagrant init --minimal
+
+[it would create a Vagrantfile with very minimal content as follows below in current path]
+$ cat Vagrantfile
+Vagrant.configure("2") do |config| 
+    config.vm.box = "base" 
+end
+
+[initialize & execute the vagrant init along with the box name at the end]
+$ vagrant init geerlingguy/centos7
