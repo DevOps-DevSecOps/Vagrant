@@ -44,6 +44,9 @@ vagrant status
 vagrant status ID
 vagrant status NAME
 
+[Provision]
+vagrant provision
+
 [Port]
 vagrant port
 vagrant port ID
