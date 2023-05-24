@@ -16,3 +16,9 @@ end
 
 [initialize & execute the vagrant init along with the box name at the end]
 $ vagrant init geerlingguy/centos7
+
+[starting the VM for the first time]
+$ vagrant up
+
+[manually provision the VM at any time (even after creating the VM)  by executing the following command]
+$ vagrant provision
