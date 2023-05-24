@@ -1,0 +1,6 @@
+[add the box manually to vagrant]
+$ vagrant box add geerlingguy/centos7
+
+[list of boxes downloaded and available in vagrant (local)]
+$ vagrant box list
+
