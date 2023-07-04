@@ -117,7 +117,13 @@ vagrant login --check                                   # check if the current u
 vagrant login                                           # it prompt username & password to login Vagrant Cloud
 vagrant login --token TOKEN_ID                          # securely authenticate with Vagrant Cloud using a token
 vagrant login --logout
+vagrant cloud auth login --check                        # check if the current user is authenticated or not
+vagrant cloud auth login                                # it prompt username & password to login Vagrant Cloud
+vagrant cloud auth login --token TOKEN_ID               # securely authenticate with Vagrant Cloud using a token
+vagrant cloud auth logout                               #
 
 [Destroy]
 vagrant destroy
 vagrant destroy -f
+vagrant destroy ID
+vagrant destroy NAME
