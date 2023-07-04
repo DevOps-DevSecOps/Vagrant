@@ -1,14 +1,15 @@
 [Box]
-vagrant box add hashicorp/bionic64
-vagrant box add envimation/ubuntu-xenial-docker https://atlas.hashicorp.com/envimation/boxes/ubuntu-xenial-docker
-vagrant box add CentOS https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box
-vagrant box remove envimation/ubuntu-xenial
-vagrant box remove CentOS
+$ vagrant box add hashicorp/bionic64
+$ vagrant box add envimation/ubuntu-xenial-docker https://atlas.hashicorp.com/envimation/boxes/ubuntu-xenial-docker
+$ vagrant box add CentOS https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box
+$ vagrant box remove envimation/ubuntu-xenial
+$ vagrant box remove CentOS
 
 [Init]
-vagrant init ubuntu/trusty64
-vagrant init hashicorp/bionic64
-vagrant init envimation/ubuntu-xenial-docker                        # refer the 'vagrant box add envimation/ubuntu-xenial-docker'
-vagrant init envimation/ubuntu-xenial-docker https://atlas.hashicorp.com/envimation/boxes/ubuntu-xenial-docker
-vagrant init CentOS                                                 # refer the 'vagrant box add CentOS'
-vagrant init my-company-box https://example.com/my-company.box
+$ vagrant init ubuntu/trusty64
+A `Vagrantfile` has been placed in this directory. You are now ready to `vagrant up` your first virtual environment! Please read the comments in the Vagrantfile as well as documentation on `vagrantup.com` for more information on using Vagrant.
+$ vagrant init hashicorp/bionic64
+$ vagrant init envimation/ubuntu-xenial-docker                        # refer the 'vagrant box add envimation/ubuntu-xenial-docker'
+$ vagrant init envimation/ubuntu-xenial-docker https://atlas.hashicorp.com/envimation/boxes/ubuntu-xenial-docker
+$ vagrant init CentOS                                                 # refer the 'vagrant box add CentOS'
+$ vagrant init my-company-box https://example.com/my-company.box
