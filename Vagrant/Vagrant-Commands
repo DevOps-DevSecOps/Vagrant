@@ -35,7 +35,8 @@ vagrant validate
 
 [Up]
 vagrant up
-vagrant up
+vagrant up --debug                                      # debug level output
+vagrant up --debug &> FILE_NAME                         # saving the output to a file, need to redirect stderr and stdout using &>
 vagrant up ID                                           # the machine id found with 'vagrant global-status'
 vagrant up NAME                                         # name of machine defined in Vagrantfile, name to specify the Vagrant machine in Vagrantfile
 
@@ -112,3 +113,5 @@ vagrant login --check                                   # check if the current u
 vagrant login                                           # it prompt username & password to login Vagrant Cloud
 vagrant login --token TOKEN_ID                          # securely authenticate with Vagrant Cloud using a token
 vagrant login --logout
+
+[]
