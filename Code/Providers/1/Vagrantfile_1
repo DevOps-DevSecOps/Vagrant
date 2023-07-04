@@ -1,0 +1,7 @@
+Vagrant.configure("2") do |config|
+  # ... other config up here
+
+  # Prefer VMware Fusion before VirtualBox
+  config.vm.provider "vmware_fusion"
+  config.vm.provider "virtualbox"
+end
