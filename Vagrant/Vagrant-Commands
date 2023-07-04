@@ -120,3 +120,4 @@ vagrant login --logout
 
 [Destroy]
 vagrant destroy
+vagrant destroy -f
