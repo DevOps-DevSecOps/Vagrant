@@ -9,6 +9,7 @@ vagrant box add BOX_NAME
 vagrant box add BOX_NAME HTTP_URL_ADDRESS
 vagrant box add NAME HTTP_URL_ADDRESS
 vagrant box list                                        # lists all the boxes that are installed into Vagrant
+vagrant box list -i                                     # additional box information
 vagrant box outdated                                    
 vagrant box outdated --force
 vagrant box outdated --global
@@ -79,6 +80,7 @@ vagrant reload ID
 vagrant reload NAME
 
 [Share]
+vagrant plugin install vagrant-share
 ◉ HTTP Sharing
 vagrant share                                           # HTTP server is running in Vagrant environment with default port no
 vagrant share --http PORT_NO                            # port of the HTTP server running in the Vagrant environment
