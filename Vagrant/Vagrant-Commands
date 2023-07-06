@@ -19,16 +19,14 @@ vagrant box prune                                                               
 vagrant box prune --force
 vagrant box prune --name VAGRANT_CLOUD_USER_NAME/BOX_IMAGE_NAME                       # specific box name to check for outdated versions
 
-[Init]                                                  # initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile
-vagrant init                                            # current directory it created a Vagrantfile need to be start from scratch
-vagrant init BOX_NAME                                   # directly adding 
-vagrant init BOX_NAME HTTP_URL_ADDRESS
-vagrant init -m BOX_NAME                                # minimal Vagrantfile
-vagrant init --minimal BOX_NAME
-vagrant init -f BOX_NAME                                # overwrite an existing Vagrantfile in current path
-vagrant init --force BOX_NAME
-vagrant init NAME
-vagrant init NAME HTTP_URL_ADDRESS                      
+[Init]                                                                                # initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile
+vagrant init                                                                          # current directory it created a Vagrantfile need to be start from scratch
+vagrant init VAGRANT_CLOUD_USER_NAME/BOX_IMAGE_NAME                                   # directly adding 
+vagrant init VAGRANT_CLOUD_USER_NAME/BOX_IMAGE_NAME HTTP_URL_ADDRESS
+vagrant init -m VAGRANT_CLOUD_USER_NAME/BOX_IMAGE_NAME                                # minimal Vagrantfile
+vagrant init --minimal VAGRANT_CLOUD_USER_NAME/BOX_IMAGE_NAME
+vagrant init -f VAGRANT_CLOUD_USER_NAME/BOX_IMAGE_NAME                                # overwrite an existing Vagrantfile in current path
+vagrant init --force VAGRANT_CLOUD_USER_NAME/BOX_IMAGE_NAME
 
 [Validate]                                              # it validates the Vagrantfile
 vagrant validate
