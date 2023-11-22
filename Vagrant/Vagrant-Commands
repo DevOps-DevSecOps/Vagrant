@@ -74,6 +74,15 @@ vagrant reload
 vagrant reload ID
 vagrant reload NAME
 
+[Plugin]
+vagrant plugin expunge                                  # remove all user installed custom plugins
+vagrant plugin expunge --force                          # do not prompt for confirmation prior to removal
+vagrant plugin expunge --reinstall                      # attempt to reinstall plugins after removal
+vagrant plugin install NAME                             # installs a plugin with the given name or file path
+vagrant plugin list                                     # lists all installed plugins and installed versions
+vagrant plugin uninstall NAME                           # uninstalls the plugin with the given name
+vagrant plugin update NAME                              # updates the plugins that are installed
+
 [Share]
 vagrant plugin install vagrant-share
 ◉ HTTP Sharing
