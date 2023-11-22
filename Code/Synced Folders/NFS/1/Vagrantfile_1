@@ -1,0 +1,15 @@
+Vagrant.configure("2") do |config|
+  config.vm.define "amaster" do |amaster|
+    amaster.vm.box_download_insecure = true
+    amaster.vm.box = "hashicorp/bionic64"
+    amaster.vm.network "private_network", ip: "100.0.0.1"
+    amaster.vm.hostname = "amaster"
+    amaster.vm.synced_folder "/Users/rahul/Documents", "/home/vagrant", SharedFoldersEnableSymlinksCreate: true, type: 
+    "nfs"
+    amaster.vm.provider "virtualbox" do |v|
+      v.name = "amaster"
+      v.memory = 2048
+      v.cpus = 2
+    end
+  end
+end 
